@@ -18,20 +18,20 @@ public class Vendedor {
     private int numeroAutos;
     private double comisionPorAuto;
 
-    public Vendedor(String n, int e, double sMinimo, int nAutos) {
-        nombres = n;
-        edad = e;
-        salarioMinimo = sMinimo;
-        establecerNumeroAutos(nAutos);
-        comisionPorAuto = 150;
+    public Vendedor(String nombres, int edad, double salarioMinimo, int numeroAutos, double comisionPorAuto) {
+        this.nombres = nombres;
+        this.edad = edad;
+        this.salarioMinimo = salarioMinimo;
+        this.numeroAutos = numeroAutos;
+        this.comisionPorAuto = comisionPorAuto;
     }
 
     public void establecerNombres(String c) {
-        nombres = c;
+        this.nombres = c;
     }
 
     public void establecerEdad(int c) {
-        edad = c;
+        this.edad = c;  
     }
 
     public void calcularPagoMensual() {
